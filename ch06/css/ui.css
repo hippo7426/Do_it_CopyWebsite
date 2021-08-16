@@ -106,7 +106,9 @@ footer > a.instar:hover{background:url(../images/social_b_instar_hover.png) no-r
 /*도서소개 페이지 만들기*/
 #menu2.content h3{font-size:0px;}
 #menu2.content.this .conbox{background:url(../images/bookbg.png) no-repeat -15px 360px; max-width:100%;}
-.notebook{width:954px; height:650px; margin:100px auto 0 auto; background:url(../images/mackbook.png) no-repeat; background-size:954px; position:relative;}
+.notebook{width:954px; height:650px; margin:100px auto 0 auto; background:url(../images/mackbook.png) no-repeat; background-size:954px; position:relative; transform-style:
+preserve-3d; transform:matrix3d(1,0,0,0,0,0.1,0,0,0,0,1,0,0,0,0,1); transition:all ease-in-out 6s; transition-delay:.8s; opacity:0;}
+#menu2.this .notebook{transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1); opacity:1;}
 .detail_content{width:719px; height:453px; position:absolute; left:117px; top:38px; padding:30px 0;}
 .img_book{width:270px; float:left;}
 .img_book img{width:270px;}
